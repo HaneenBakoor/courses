@@ -30,6 +30,7 @@ class CourseController extends Controller
             'description' => $validated['description'],
             'start_date' => $validated['start_date'],
             'finish_date' => $validated['finish_date'],
+            'level' => $validated['level'],
             'cost' => $validated['cost'],
             'teacher_id' => $user->id
         ]);
@@ -49,11 +50,15 @@ class CourseController extends Controller
     {
         $validated = $request->validated();
         $course = Course::findorfail($id);
-        $course->update(
-            $validated
+        $user = Auth::user();
+        if ($user->id == $course->teacher_id) {
+            $course->update(
+                $validated
 
-        );
-        return $this->successResponse("updated successfully");
+            );
+            return $this->successResponse("updated successfully");
+        }
+        return  $this->unauthorized("you don't have permission to update this course");
     }
 
 
@@ -64,5 +69,44 @@ class CourseController extends Controller
         return $this->successResponse("deleted successfully");
     }
 
-   
+    public function restore(string $id)
+    {
+        $course = Course::withTrashed()->findOrFail($id);
+        $course->restore();
+        return $this->successResponse("restored successfully");
+    }
+
+    //    public function search(Request $request)
+    // {
+    //     $query = strtolower(trim($request->input('query')));
+    //     $level = $request->input('level');
+
+    //     $courses = Course::query()
+    //         ->whereRaw('LOWER(title) LIKE ?', ['%' . $query . '%'])
+    //         ->when($level, fn($q) => $q->where('level', $level))
+    //         ->get();
+
+    //     return $this->successResponse(CourseResource::collection($courses));
+    // }
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+
+        $courses = Course::where('title', 'LIKE', "%{$query}%")->get();
+
+
+        return $this->successResponse(CourseResource::collection($courses));
+    }
+
+
+
+    public function courses(Request $request)
+    {
+        $sortDirection = $request->input('sort_direction');
+        $sortBy = $request->input('sort_by', 'created_at'); 
+
+        $courses = Course::orderBy($sortBy, $sortDirection)->get();
+
+        return $this->successResponse(CourseResource::collection($courses));
+    }
 }
