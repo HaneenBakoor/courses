@@ -1,0 +1,228 @@
+[
+  {
+    "title": "Full-Stack Web Development with Laravel & Vue.js",
+    "description": "Master backend and frontend development using Laravel and Vue.js in this hands-on course.",
+    "start_date": "2025-08-01",
+    "finish_date": "2025-10-15",
+    "cost": 199,
+    "teacher_id": "TCH001",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Cybersecurity Fundamentals for Beginners",
+    "description": "Understand the basics of cybersecurity, including threat detection and risk management.",
+    "start_date": "2025-07-20",
+    "finish_date": "2025-09-01",
+    "cost": 0,
+    "teacher_id": "TCH002",
+    "level": "Beginner"
+  },
+  {
+    "title": "Python Programming for Data Science",
+    "description": "Learn Python and its data science libraries like Pandas and NumPy through real-world projects.",
+    "start_date": "2025-09-10",
+    "finish_date": "2025-11-20",
+    "cost": 49,
+    "teacher_id": "TCH003",
+    "level": "Beginner"
+  },
+  {
+    "title": "Web Application Development with Django",
+    "description": "Build scalable web apps using Django and PostgreSQL with a focus on RESTful APIs.",
+    "start_date": "2025-08-15",
+    "finish_date": "2025-10-30",
+    "cost": 120,
+    "teacher_id": "TCH004",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Ethical Hacking and Network Security",
+    "description": "Advanced training in penetration testing and network defense using Kali Linux and Metasploit.",
+    "start_date": "2025-09-01",
+    "finish_date": "2025-12-01",
+    "cost": 250,
+    "teacher_id": "TCH005",
+    "level": "Advanced"
+  },
+  {
+    "title": "JavaScript for Modern Web Interfaces",
+    "description": "Learn JavaScript ES6+ and build dynamic, interactive web interfaces with DOM manipulation.",
+    "start_date": "2025-10-01",
+    "finish_date": "2025-11-15",
+    "cost": 89,
+    "teacher_id": "TCH006",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Responsive Web Design with HTML & CSS",
+    "description": "Design mobile-friendly websites using Flexbox, Grid, and modern CSS techniques.",
+    "start_date": "2025-08-10",
+    "finish_date": "2025-09-25",
+    "cost": 59,
+    "teacher_id": "TCH007",
+    "level": "Beginner"
+  },
+  {
+    "title": "Advanced PHP and MySQL Web Development",
+    "description": "Build secure and scalable web applications using PHP 8 and MySQL 8.",
+    "start_date": "2025-09-05",
+    "finish_date": "2025-11-10",
+    "cost": 140,
+    "teacher_id": "TCH008",
+    "level": "Advanced"
+  },
+  {
+    "title": "Introduction to Cloud Security",
+    "description": "Explore cloud security principles, IAM, and compliance frameworks like ISO 27001 and NIST.",
+    "start_date": "2025-10-05",
+    "finish_date": "2025-12-15",
+    "cost": 180,
+    "teacher_id": "TCH009",
+    "level": "Intermediate"
+  },
+  {
+    "title": "React.js Frontend Development",
+    "description": "Build modern single-page applications using React, JSX, and React Router.",
+    "start_date": "2025-08-20",
+    "finish_date": "2025-10-20",
+    "cost": 110,
+    "teacher_id": "TCH010",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Mastering TypeScript for Scalable Applications",
+    "description": "Deep dive into TypeScript to build large-scale, maintainable JavaScript applications.",
+    "start_date": "2025-10-01",
+    "finish_date": "2025-12-10",
+    "cost": 130,
+    "teacher_id": "TCH016",
+    "level": "Advanced"
+  },
+  {
+    "title": "Intro to Web Accessibility",
+    "description": "Learn how to make websites accessible to users with disabilities using WCAG standards.",
+    "start_date": "2025-09-05",
+    "finish_date": "2025-10-20",
+    "cost": 60,
+    "teacher_id": "TCH017",
+    "level": "Beginner"
+  },
+  {
+    "title": "Secure Web Development with OWASP",
+    "description": "Protect your web apps by learning OWASP Top 10 vulnerabilities and mitigation techniques.",
+    "start_date": "2025-08-25",
+    "finish_date": "2025-10-05",
+    "cost": 145,
+    "teacher_id": "TCH018",
+    "level": "Advanced"
+  },
+  {
+    "title": "Building APIs with FastAPI and Python",
+    "description": "Create high-performance RESTful APIs using FastAPI and asynchronous Python.",
+    "start_date": "2025-09-15",
+    "finish_date": "2025-11-01",
+    "cost": 100,
+    "teacher_id": "TCH019",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Cybersecurity for Web Developers",
+    "description": "Understand how to secure web applications from common threats and attacks.",
+    "start_date": "2025-10-10",
+    "finish_date": "2025-12-05",
+    "cost": 170,
+    "teacher_id": "TCH020",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Intro to Git and Version Control",
+    "description": "Learn Git fundamentals, branching, merging, and collaboration on GitHub.",
+    "start_date": "2025-08-20",
+    "finish_date": "2025-09-10",
+    "cost": 30,
+    "teacher_id": "TCH021",
+    "level": "Beginner"
+  },
+  {
+    "title": "DevSecOps Essentials",
+    "description": "Integrate security into DevOps pipelines using tools like SonarQube and Snyk.",
+    "start_date": "2025-09-25",
+    "finish_date": "2025-11-15",
+    "cost": 190,
+    "teacher_id": "TCH022",
+    "level": "Advanced"
+  },
+  {
+    "title": "Vue.js 3 Crash Course",
+    "description": "Build reactive web interfaces using Vue 3 Composition API and Vue Router.",
+    "start_date": "2025-08-30",
+    "finish_date": "2025-10-10",
+    "cost": 85,
+    "teacher_id": "TCH023",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Intro to SQL and Relational Databases",
+    "description": "Master SQL queries, joins, and database design using MySQL and PostgreSQL.",
+    "start_date": "2025-09-01",
+    "finish_date": "2025-10-15",
+    "cost": 50,
+    "teacher_id": "TCH024",
+    "level": "Beginner"
+  },
+  {
+    "title": "Penetration Testing with Metasploit",
+    "description": "Learn ethical hacking techniques using Metasploit Framework and Kali Linux.",
+    "start_date": "2025-10-05",
+    "finish_date": "2025-12-20",
+    "cost": 220,
+    "teacher_id": "TCH025",
+    "level": "Advanced"
+  },
+  {
+    "title": "Intro to Java Programming",
+    "description": "Learn Java syntax, OOP principles, and build console-based applications.",
+    "start_date": "2025-08-15",
+    "finish_date": "2025-10-01",
+    "cost": 75,
+    "teacher_id": "TCH026",
+    "level": "Beginner"
+  },
+  {
+    "title": "Building Web Apps with Flask",
+    "description": "Create lightweight web apps using Flask, Jinja2, and SQLite.",
+    "start_date": "2025-09-10",
+    "finish_date": "2025-11-05",
+    "cost": 95,
+    "teacher_id": "TCH027",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Cloud Security with AWS",
+    "description": "Secure AWS environments using IAM, VPCs, and encryption best practices.",
+    "start_date": "2025-10-01",
+    "finish_date": "2025-12-10",
+    "cost": 210,
+    "teacher_id": "TCH028",
+    "level": "Advanced"
+  },
+  {
+    "title": "Intro to Responsive UI with Tailwind CSS",
+    "description": "Design beautiful, responsive UIs using Tailwind CSS utility classes.",
+    "start_date": "2025-08-22",
+    "finish_date": "2025-09-30",
+    "cost": 55,
+    "teacher_id": "TCH029",
+    "level": "Beginner"
+  },
+  {
+    "title": "JavaScript Algorithms and Data Structures",
+    "description": "Implement classic algorithms and data structures in JavaScript for interviews.",
+    "start_date": "2025-09-18",
+    "finish_date": "2025-11-25",
+    "cost": 115,
+    "teacher_id": "TCH030",
+    "level": "Intermediate"
+  }
+
+]

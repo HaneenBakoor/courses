@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Brian Davis",
+    "email": "brian.davis@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Catherine Lee",
+    "email": "catherine.lee@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Daniel Kim",
+    "email": "daniel.kim@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Emma Martinez",
+    "email": "emma.martinez@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Frank White",
+    "email": "frank.white@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Grace Robinson",
+    "email": "grace.robinson@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Henry Thompson",
+    "email": "henry.thompson@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Isabella Moore",
+    "email": "isabella.moore@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Jacob Murphy",
+    "email": "jacob.murphy@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Kaitlyn Patel",
+    "email": "kaitlyn.patel@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Leo Gonzalez",
+    "email": "leo.gonzalez@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Maya Carter",
+    "email": "maya.carter@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Nathan Ross",
+    "email": "nathan.ross@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Olivia Barnes",
+    "email": "olivia.barnes@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Paul Nguyen",
+    "email": "paul.nguyen@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Quinn Simmons",
+    "email": "quinn.simmons@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Riley Evans",
+    "email": "riley.evans@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Sophie Adams",
+    "email": "sophie.adams@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Tyler Foster",
+    "email": "tyler.foster@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Uma Sharma",
+    "email": "uma.sharma@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Victor Allen",
+    "email": "victor.allen@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Wendy Lopez",
+    "email": "wendy.lopez@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Xander Wells",
+    "email": "xander.wells@example.com",
+    "password": "password",
+    "role": "teacher"
+  },
+  {
+    "name": "Yasmine Brooks",
+    "email": "yasmine.brooks@example.com",
+    "password": "password",
+    "role": "teacher"
+  }
+]

@@ -22,7 +22,7 @@ class CourseRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title'=>['required','string','max:255','unique:courses,title,except,id'],
+            'title'=>['required','string','max:255'],
             'description'=>['required','string','max:255'],
             'start_date'=>['required','date'],
              'finish_date' => ['required', 'date','after_or_equal:start_date'],

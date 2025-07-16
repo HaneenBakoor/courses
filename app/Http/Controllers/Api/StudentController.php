@@ -41,4 +41,16 @@ class StudentController extends Controller
 
         return $this->successResponse("Enrolled Successfully");
     }
+
+    public function cancelCourse($course_id)
+    {
+        $user = Auth::user();
+
+        if ($user->enrolledCourses()->where('course_id', $course_id)->exists()) {
+            $user->enrolledCourses()->detach($course_id);
+            return $this->successResponse("Canceled Successfully");
+        }
+
+        return $this->errorResponse("You are not enrolled this course");
+    }
 }
