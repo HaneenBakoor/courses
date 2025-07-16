@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->date('start_date');
             $table->date('finish_date');
-            $table->integer('cost');
+            $table->float('cost');
             $table->enum('level', ['Beginner', 'Intermediate', 'Advanced']);
             $table->uuid('teacher_id');
             $table->foreign('teacher_id')->references('id')->on('users')->onDelete('restrict');
