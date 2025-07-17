@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Course;
 use Illuminate\Http\Request;
+use Spatie\Searchable\Search;
 use App\Traits\ApiResponseTrait;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CourseRequest;
@@ -88,14 +89,34 @@ class CourseController extends Controller
 
     //     return $this->successResponse(CourseResource::collection($courses));
     // }
-    public function search(Request $request)
+    // public function search(Request $request)
+    // {
+    //     $query = $request->input('query');
+
+    //     $courses = Course::where('title', 'LIKE', "%{$query}%")->get();
+
+
+    //     return $this->successResponse(CourseResource::collection($courses));
+    // }
+     public function search(Request $request)
     {
-        $query = $request->input('query');
+        $query = $request->input('q');
 
-        $courses = Course::where('title', 'LIKE', "%{$query}%")->get();
+        $searchResults = (new Search())
+            ->registerModel(Course::class, ['title', 'description'])
+            ->search($query);
 
-
-        return $this->successResponse(CourseResource::collection($courses));
+        return response()->json([
+            'count' => $searchResults->count(),
+            'results' => $searchResults->map(function ($result) {
+                return [
+                    'id'=>$result->searchable->id,
+                    'title' => $result->title,
+                    'description'=>$result->searchable->description,
+                    'level'=>$result->searchable->level,
+                ];
+            }),
+        ]);
     }
 
 
@@ -103,7 +124,7 @@ class CourseController extends Controller
     public function courses(Request $request)
     {
         $sortDirection = $request->input('sort_direction');
-        $sortBy = $request->input('sort_by', 'created_at'); 
+        $sortBy = $request->input('sort_by', 'created_at');
 
         $courses = Course::orderBy($sortBy, $sortDirection)->get();
 

@@ -3,13 +3,15 @@
 namespace App\Models;
 
 use App\Models\User;
+use Spatie\Searchable\Searchable;
+use Spatie\Searchable\SearchResult;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Course extends Model
+class Course extends Model implements Searchable
 {
     use HasFactory, HasUuids, SoftDeletes;
     protected $fillable = [
@@ -45,5 +47,13 @@ class Course extends Model
             'name' => $this->name,
             'description' => $this->description,
         ];
+    }
+      public function getSearchResult(): SearchResult
+    {
+
+        return new SearchResult(
+            $this,
+            $this->title,
+        );
     }
 }
