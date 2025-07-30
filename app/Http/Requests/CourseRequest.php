@@ -26,6 +26,7 @@ class CourseRequest extends FormRequest
             'description'=>['required','string','max:255'],
             'start_date'=>['required','date'],
              'finish_date' => ['required', 'date','after_or_equal:start_date'],
+             'level'=>['required','string'],
             'cost' => ['required','numeric'],
             'teacher_id'=>['exists:users,id']
         ];

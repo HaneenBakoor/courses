@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Events\MyBroadcastEvent;
 use App\Models\Course;
 use Illuminate\Http\Request;
 use Spatie\Searchable\Search;
@@ -35,7 +36,11 @@ class CourseController extends Controller
             'cost' => $validated['cost'],
             'teacher_id' => $user->id
         ]);
-
+        $data=[
+         'user'=>$user->name,
+         'course'=>$course->title,
+        ];
+         event(new MyBroadcastEvent($data));
         return $this->successResponse(new CourseResource($course), "created successfully");
     }
 
